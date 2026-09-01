@@ -186,14 +186,27 @@ Open your browser and navigate to:
 | :--- | :--- |
 | `npm run dev` | Starts the local development server on `http://localhost:3000` with instant Hot Module Replacement (HMR). |
 | `npm run build` | Runs TypeScript compilation (`tsc`) and builds optimized production bundles into the `dist/` directory. |
+| `npm run deploy` | Builds the production app, creates SPA 404 fallback, and publishes to the `gh-pages` branch on GitHub. |
 | `npm run preview` | Locally previews the production build from `dist/` on a local web server. |
-| `npm run lint` | Runs ESLint across the codebase to check for code quality and syntax issues. |
 
 ---
 
 ## 🚀 Deployment Guide
 
-### Deploy to Vercel (Recommended)
+### Deploy to GitHub Pages (Live)
+
+1. Run the one-command deployment script:
+   ```bash
+   npm run deploy
+   ```
+2. Go to your GitHub repository: [Settings → Pages](https://github.com/Resourcia212/TRAINFINITY_ACADEMY/settings/pages).
+3. Under **Branch**, select **`gh-pages`** and folder **`/(root)`**, then click **Save**.
+4. Your website will be live at:
+   👉 **[https://Resourcia212.github.io/TRAINFINITY_ACADEMY/](https://Resourcia212.github.io/TRAINFINITY_ACADEMY/)**
+
+---
+
+### Deploy to Vercel
 
 1. Push your latest changes to GitHub.
 2. Log in to [Vercel](https://vercel.com).
