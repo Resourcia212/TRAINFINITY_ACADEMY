@@ -5,7 +5,7 @@ import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { GalleryLightbox } from '@/components/common/GalleryLightbox';
 import { GALLERY_ITEMS, GALLERY_CATEGORIES, GalleryItem } from '@/data/gallery';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const GalleryPreviewSection: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -58,7 +58,7 @@ export const GalleryPreviewSection: React.FC = () => {
               className="group relative rounded-2xl overflow-hidden shadow-2xs hover:shadow-card bg-slate-900 cursor-pointer aspect-[4/3] border border-slate-200"
             >
               <img
-                src={item.image}
+                src={assetUrl(item.image)}
                 alt={item.title}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
               />

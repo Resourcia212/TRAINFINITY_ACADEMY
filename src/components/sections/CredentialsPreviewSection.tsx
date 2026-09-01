@@ -5,6 +5,7 @@ import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { DocumentModal } from '@/components/common/DocumentModal';
 import { CREDENTIALS_DOCUMENTS, CredentialDocument } from '@/data/credentials';
+import { assetUrl } from '@/lib/utils';
 
 export const CredentialsPreviewSection: React.FC = () => {
   const [selectedDoc, setSelectedDoc] = useState<CredentialDocument | null>(null);
@@ -32,7 +33,7 @@ export const CredentialsPreviewSection: React.FC = () => {
                   className="relative h-60 bg-slate-900 cursor-pointer overflow-hidden group/thumb"
                 >
                   <img
-                    src={doc.imagePath}
+                    src={assetUrl(doc.imagePath)}
                     alt={doc.title}
                     className="w-full h-full object-cover object-top opacity-90 group-hover/thumb:scale-105 transition-transform duration-500"
                   />

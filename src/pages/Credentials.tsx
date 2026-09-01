@@ -12,7 +12,7 @@ import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { DocumentModal } from '@/components/common/DocumentModal';
 import { CREDENTIALS_DOCUMENTS, CredentialDocument } from '@/data/credentials';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const Credentials: React.FC = () => {
   const [selectedDoc, setSelectedDoc] = useState<CredentialDocument | null>(null);
@@ -92,7 +92,7 @@ export const Credentials: React.FC = () => {
                   className="relative h-64 sm:h-72 bg-slate-900 cursor-pointer overflow-hidden group/thumb"
                 >
                   <img
-                    src={doc.imagePath}
+                    src={assetUrl(doc.imagePath)}
                     alt={doc.title}
                     className="w-full h-full object-cover object-top opacity-90 group-hover/thumb:scale-105 transition-transform duration-500"
                   />

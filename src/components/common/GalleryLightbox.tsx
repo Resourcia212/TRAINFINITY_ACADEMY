@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, MapPin } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GalleryItem } from '@/data/gallery';
+import { assetUrl } from '@/lib/utils';
 
 interface GalleryLightboxProps {
   items: GalleryItem[];
@@ -103,7 +104,7 @@ export const GalleryLightbox: React.FC<GalleryLightboxProps> = ({
           >
             <div className="overflow-hidden rounded-2xl shadow-2xl bg-black max-h-[70vh]">
               <img
-                src={currentItem.image}
+                src={assetUrl(currentItem.image)}
                 alt={currentItem.title}
                 className="w-auto h-auto max-h-[70vh] max-w-full object-contain mx-auto"
               />

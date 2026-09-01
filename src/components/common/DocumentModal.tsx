@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X, CheckCircle2, Shield, Calendar, Building, FileText, ExternalLink } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CredentialDocument } from '@/data/credentials';
+import { assetUrl } from '@/lib/utils';
 
 interface DocumentModalProps {
   document: CredentialDocument | null;
@@ -66,13 +67,13 @@ export const DocumentModal: React.FC<DocumentModalProps> = ({
             <div className="lg:w-7/12 bg-slate-900 flex items-center justify-center p-4 sm:p-6 overflow-y-auto max-h-[50vh] lg:max-h-full">
               <div className="relative max-w-full">
                 <img
-                  src={document.imagePath}
+                  src={assetUrl(document.imagePath)}
                   alt={document.title}
                   className="max-h-[75vh] w-auto object-contain rounded-lg shadow-lg border border-slate-700 mx-auto"
                 />
                 <div className="mt-2 text-center">
                   <a
-                    href={document.imagePath}
+                    href={assetUrl(document.imagePath)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs text-brand-teal-bright hover:underline font-medium"

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, PhoneCall, ShieldCheck, Award, Users } from 'lucide-react';
 import { Container } from '@/components/common/Container';
+import { assetUrl } from '@/lib/utils';
 
 export const HeroSection: React.FC = () => {
   // Interactive Training Visual Showcase
@@ -162,7 +163,7 @@ export const HeroSection: React.FC = () => {
               <AnimatePresence mode="wait">
                 <motion.img
                   key={currentVisual.image}
-                  src={currentVisual.image}
+                  src={assetUrl(currentVisual.image)}
                   alt={currentVisual.title}
                   initial={{ opacity: 0, scale: 1.08 }}
                   animate={{ opacity: 1, scale: 1 }}

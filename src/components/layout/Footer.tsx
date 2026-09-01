@@ -5,6 +5,7 @@ import { Container } from '@/components/common/Container';
 import { ACADEMY_INFO } from '@/data/siteContent';
 import { TRAINING_PROGRAMS } from '@/data/trainingPrograms';
 import { SERVICES } from '@/data/services';
+import { assetUrl } from '@/lib/utils';
 
 export const Footer: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ export const Footer: React.FC = () => {
             <Link to="/" className="inline-flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-white p-1.5 flex items-center justify-center">
                 <img
-                  src="/images/logo/trainfinity-logo.png"
+                  src={assetUrl("/images/logo/trainfinity-logo.png")}
                   alt="Trainfinity Academy"
                   className="w-full h-full object-contain"
                 />

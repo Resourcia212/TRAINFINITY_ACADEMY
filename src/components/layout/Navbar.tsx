@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone, ArrowRight } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { ACADEMY_INFO } from '@/data/siteContent';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -91,7 +91,7 @@ export const Navbar: React.FC = () => {
           >
             <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white shadow-xs p-1 flex items-center justify-center border border-slate-200/80 group-hover:border-brand-teal transition-colors shrink-0">
               <img
-                src="/images/logo/trainfinity-logo.png"
+                src={assetUrl("/images/logo/trainfinity-logo.png")}
                 alt="Trainfinity Academy Logo"
                 className="w-full h-full object-contain"
               />

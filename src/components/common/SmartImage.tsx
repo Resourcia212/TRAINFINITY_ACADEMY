@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ImageOff } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 interface SmartImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -51,7 +51,7 @@ export const SmartImage: React.FC<SmartImageProps> = ({
         </div>
       ) : (
         <img
-          src={src}
+          src={assetUrl(src)}
           alt={alt}
           onLoad={() => setLoaded(true)}
           onError={() => setError(true)}
