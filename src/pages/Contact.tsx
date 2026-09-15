@@ -1,24 +1,25 @@
-import React, { useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import * as z from 'zod';
-import { toast } from 'sonner';
+import React from 'react';
+// import { useEffect } from 'react';
+// import { useSearchParams } from 'react-router-dom';
+// import { useForm } from 'react-hook-form';
+// import { zodResolver } from '@hookform/resolvers/zod';
+// import * as z from 'zod';
+// import { toast } from 'sonner';
 import {
   Phone,
   MapPin,
   Instagram,
-  Send,
+  // Send,
   Clock,
   Mail,
   ShieldCheck,
-  User,
-  Building2,
-  ChevronDown,
-  Layers,
-  Calendar,
-  MessageSquare,
-  Sparkles,
+  // User,
+  // Building2,
+  // ChevronDown,
+  // Layers,
+  // Calendar,
+  // MessageSquare,
+  // Sparkles,
   CheckCircle2,
   FileCheck,
   Zap,
@@ -27,6 +28,12 @@ import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { ACADEMY_INFO } from '@/data/siteContent';
 
+/* =========================================================================
+   NOTE: CONTACT FORM VALIDATION & STATE (TEMPORARILY COMMENTED OUT)
+   Uncomment this block whenever you want to re-enable the proposal form.
+========================================================================= */
+
+/*
 const contactFormSchema = z.object({
   fullName: z.string().min(2, { message: 'Please enter your full name (at least 2 characters)' }),
   organization: z.string().optional(),
@@ -45,8 +52,10 @@ const contactFormSchema = z.object({
 });
 
 type ContactFormData = z.infer<typeof contactFormSchema>;
+*/
 
 export const Contact: React.FC = () => {
+  /*
   const [searchParams] = useSearchParams();
   const preSelectedProgram = searchParams.get('program') || '';
   const preSelectedService = searchParams.get('service') || '';
@@ -122,6 +131,7 @@ export const Contact: React.FC = () => {
     'Practical Drill Grounds',
     'Customized Multi-Location Schedule',
   ];
+  */
 
   return (
     <div className="py-10 sm:py-14 bg-white">
@@ -145,12 +155,12 @@ export const Contact: React.FC = () => {
           </p>
         </div>
 
-        {/* Perfectly Balanced 2-Column Grid */}
+        {/* Contact Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 mb-16 items-stretch">
-          {/* Left Column: Academy Contact Details & Commitment Panel (Full Height) */}
-          <div className="lg:col-span-5 flex flex-col justify-between gap-6">
+          {/* Left Column: Academy Contact Details & Commitment Panel */}
+          <div className="lg:col-span-8 lg:col-start-3 flex flex-col gap-6">
             {/* Primary Details Card */}
-            <div className="p-7 sm:p-8 rounded-3xl bg-brand-bg-soft border border-slate-200/90 shadow-2xs space-y-6 flex-1">
+            <div className="p-7 sm:p-9 rounded-3xl bg-brand-bg-soft border border-slate-200/90 shadow-2xs space-y-6">
               <div>
                 <span className="text-[11px] font-bold uppercase tracking-widest text-brand-teal block mb-1">
                   Head Office & Academy
@@ -160,9 +170,9 @@ export const Contact: React.FC = () => {
                 </h3>
               </div>
 
-              <div className="space-y-4 text-xs sm:text-sm text-slate-800">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs sm:text-sm text-slate-800">
                 {/* Address */}
-                <div className="flex items-start gap-3.5">
+                <div className="flex items-start gap-3.5 sm:col-span-2">
                   <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-brand-teal border border-slate-200 shrink-0 shadow-2xs mt-0.5">
                     <MapPin className="w-4.5 h-4.5" />
                   </div>
@@ -216,7 +226,7 @@ export const Contact: React.FC = () => {
                 </div>
 
                 {/* Hours */}
-                <div className="flex items-start gap-3.5">
+                <div className="flex items-start gap-3.5 sm:col-span-2">
                   <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-brand-teal border border-slate-200 shrink-0 shadow-2xs">
                     <Clock className="w-4.5 h-4.5" />
                   </div>
@@ -271,14 +281,16 @@ export const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Executive Proposal Request Form */}
+          {/* =========================================================================
+             RIGHT COLUMN: EXECUTIVE PROPOSAL REQUEST FORM (TEMPORARILY COMMENTED OUT)
+             Uncomment this block whenever you want to re-enable the form.
+          ========================================================================= */}
+          {/*
           <div className="lg:col-span-7 flex flex-col">
             <div className="p-7 sm:p-9 lg:p-10 rounded-3xl bg-white border border-slate-200/90 shadow-card relative overflow-hidden flex-1 flex flex-col justify-between">
-              {/* Subtle top decorative border accent */}
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-brand-navy via-brand-teal to-brand-teal-bright" />
 
               <div>
-                {/* Form Title */}
                 <div className="mb-7 pb-4 border-b border-slate-100">
                   <div className="flex items-center gap-2 mb-1">
                     <Sparkles className="w-4 h-4 text-brand-teal" />
@@ -295,7 +307,6 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-5">
-                  {/* Full Name */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                       Full Name <span className="text-rose-500">*</span>
@@ -320,9 +331,7 @@ export const Contact: React.FC = () => {
                     )}
                   </div>
 
-                  {/* Organization & Category */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {/* Organization */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                         Organization / Institution
@@ -340,7 +349,6 @@ export const Contact: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Category Dropdown */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                         Service Category <span className="text-rose-500">*</span>
@@ -366,9 +374,7 @@ export const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Phone & Email */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {/* Phone */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                         Phone Number <span className="text-rose-500">*</span>
@@ -393,7 +399,6 @@ export const Contact: React.FC = () => {
                       )}
                     </div>
 
-                    {/* Email */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                         Email Address
@@ -419,9 +424,7 @@ export const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Specific Service Selected & Delivery Format */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {/* Service Selected Dropdown */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                         Service Blueprint <span className="text-rose-500">*</span>
@@ -448,7 +451,6 @@ export const Contact: React.FC = () => {
                       )}
                     </div>
 
-                    {/* Preferred Delivery Format */}
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                         Preferred Delivery Mode
@@ -474,7 +476,6 @@ export const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Message / Details */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-brand-navy mb-1.5">
                       Message / Batch Size & Location Details <span className="text-rose-500">*</span>
@@ -499,7 +500,6 @@ export const Contact: React.FC = () => {
                     )}
                   </div>
 
-                  {/* Submit Action Button */}
                   <button
                     type="submit"
                     disabled={isSubmitting}
@@ -512,6 +512,7 @@ export const Contact: React.FC = () => {
               </div>
             </div>
           </div>
+          */}
         </div>
       </Container>
     </div>
