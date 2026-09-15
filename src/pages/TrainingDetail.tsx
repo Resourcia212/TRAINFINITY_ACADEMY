@@ -1,19 +1,20 @@
 import React from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import {
-  ShieldCheck,
   Clock,
-  Users,
   CheckCircle2,
-  ArrowRight,
   BookOpen,
-  Briefcase,
   Target,
   ArrowLeft,
+  CalendarCheck,
+  ShieldCheck,
+  Phone,
+  MessageCircle,
 } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { TRAINING_PROGRAMS } from '@/data/trainingPrograms';
+import { ACADEMY_INFO } from '@/data/siteContent';
 
 export const TrainingDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -23,8 +24,12 @@ export const TrainingDetail: React.FC = () => {
     return <Navigate to="/training" replace />;
   }
 
+  const whatsappInquiryUrl = `https://wa.me/919011065099?text=${encodeURIComponent(
+    `Hello Trainfinity Academy, I would like to inquire about the ${program.title} training program.`
+  )}`;
+
   return (
-    <div className="py-12 sm:py-16 bg-white">
+    <div className="py-10 sm:py-14 bg-white">
       <Container>
         {/* Breadcrumb Navigation */}
         <Breadcrumbs
@@ -34,8 +39,8 @@ export const TrainingDetail: React.FC = () => {
           ]}
         />
 
-        {/* Hero Banner Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-20">
+        {/* Hero Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16">
           <div className="lg:col-span-7">
             <div className="flex items-center gap-2 mb-4">
               <span className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-teal-light text-brand-teal-dark border border-brand-teal/20">
@@ -55,18 +60,30 @@ export const TrainingDetail: React.FC = () => {
               {program.fullDescription}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <Link
-                to={`/contact?program=${encodeURIComponent(program.title)}`}
-                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-btn bg-brand-navy text-white text-sm font-bold shadow-card hover:bg-brand-navy-deep active:scale-95 transition-all group"
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              {/* WhatsApp Button */}
+              <a
+                href={whatsappInquiryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-bold shadow-md active:scale-95 transition-all group whitespace-nowrap"
               >
-                <span>Request This Training</span>
-                <ArrowRight className="w-4 h-4 text-brand-teal-bright group-hover:translate-x-1 transition-transform" />
-              </Link>
+                <MessageCircle className="w-4 h-4 fill-white/20 text-white" />
+                <span>WhatsApp Inquire</span>
+              </a>
+
+              {/* Call Coordinator Button */}
+              <a
+                href={`tel:${ACADEMY_INFO.phone.tel}`}
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-brand-navy text-white text-xs sm:text-sm font-semibold hover:bg-brand-navy-deep active:scale-95 transition-all shadow-xs whitespace-nowrap"
+              >
+                <Phone className="w-4 h-4 text-brand-teal-bright" />
+                <span>Call {ACADEMY_INFO.phone.display}</span>
+              </a>
 
               <Link
                 to="/training"
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-btn bg-brand-bg-soft border border-slate-200 text-brand-navy text-sm font-semibold hover:border-brand-teal transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl bg-brand-bg-soft border border-slate-200 text-brand-navy text-xs sm:text-sm font-semibold hover:border-brand-teal transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
                 <span>All Programs</span>
@@ -85,35 +102,37 @@ export const TrainingDetail: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-brand-navy-deep/80 via-transparent to-transparent" />
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-brand-teal text-white mb-2 inline-block">
-                  {program.tag}
+                  Hands-On Practical Drills
                 </span>
-                <p className="text-xs text-slate-300">
-                  Practical simulations & live demonstrations.
+                <p className="text-xs sm:text-sm text-slate-200">
+                  Conducted by experienced trainers with live equipment & roleplay scenarios.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Detailed Content Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
-          {/* Main Column: Key Topics & Learning Outcomes */}
+        {/* Program Modules & Details */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-16">
+          {/* Main Column */}
           <div className="lg:col-span-8 space-y-12">
-            {/* Key Topics Covered */}
-            <div className="p-8 sm:p-10 rounded-3xl bg-brand-bg-soft border border-slate-200 shadow-subtle">
+            {/* Syllabus / Key Topics */}
+            <div>
               <div className="flex items-center gap-2.5 text-brand-navy font-bold font-heading text-xl mb-6">
                 <BookOpen className="w-5 h-5 text-brand-teal" />
-                <h2>Curriculum & Modules Covered</h2>
+                <h2>Training Syllabus & Key Topics</h2>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {program.keyTopics.map((topic, idx) => (
                   <div
                     key={idx}
-                    className="p-4.5 rounded-xl bg-white border border-slate-200/80 flex items-start gap-3 shadow-xs"
+                    className="p-5 rounded-2xl bg-brand-bg-soft border border-slate-200 flex items-start gap-3.5 transition-all hover:bg-white hover:shadow-card hover:border-brand-teal/30"
                   >
-                    <CheckCircle2 className="w-4 h-4 text-brand-teal shrink-0 mt-0.5" />
-                    <span className="text-xs sm:text-sm font-medium text-slate-800">
+                    <span className="w-7 h-7 rounded-xl bg-brand-teal-light text-brand-teal-dark font-bold text-xs flex items-center justify-center shrink-0 border border-brand-teal/20">
+                      {idx + 1}
+                    </span>
+                    <span className="text-xs sm:text-sm font-medium text-brand-navy pt-1">
                       {topic}
                     </span>
                   </div>
@@ -122,71 +141,50 @@ export const TrainingDetail: React.FC = () => {
             </div>
 
             {/* Learning Outcomes */}
-            <div>
-              <div className="flex items-center gap-2.5 text-brand-navy font-bold font-heading text-xl mb-6">
-                <Target className="w-5 h-5 text-brand-teal" />
+            <div className="p-8 rounded-3xl bg-brand-navy text-white">
+              <div className="flex items-center gap-2.5 font-bold font-heading text-xl mb-6 text-brand-teal-bright">
+                <Target className="w-5 h-5" />
                 <h2>Key Learning Outcomes</h2>
               </div>
 
-              <div className="space-y-3.5">
-                {program.learningOutcomes.map((outcome, idx) => (
-                  <div
-                    key={idx}
-                    className="p-5 rounded-2xl bg-white border border-slate-200 flex items-start gap-3.5 shadow-xs"
-                  >
-                    <span className="w-6 h-6 rounded-full bg-brand-teal-light text-brand-teal-dark font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
-                      0{idx + 1}
-                    </span>
-                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                      {outcome}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Methodology */}
-            <div className="p-8 sm:p-10 rounded-3xl bg-brand-navy text-white shadow-xl">
-              <div className="flex items-center gap-2.5 font-bold font-heading text-xl mb-6 text-brand-teal-bright">
-                <ShieldCheck className="w-5 h-5" />
-                <h2>Training Approach & Delivery Method</h2>
-              </div>
-
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {program.methodology.map((m, idx) => (
-                  <div key={idx} className="p-4.5 rounded-xl bg-white/10 border border-white/10 text-xs sm:text-sm text-slate-200">
-                    {m}
+                {program.learningOutcomes.map((outcome, idx) => (
+                  <div key={idx} className="p-4 rounded-xl bg-white/10 border border-white/10 text-sm text-slate-200 flex items-start gap-3 font-normal">
+                    <CheckCircle2 className="w-5 h-5 text-brand-teal-bright shrink-0 mt-0.5" />
+                    <span>{outcome}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
 
-          {/* Sidebar Column: Target Audience & Related Sectors */}
+          {/* Sidebar Column */}
           <div className="lg:col-span-4 space-y-6">
-            {/* Target Audience */}
-            <div className="p-7 rounded-3xl bg-white border border-slate-200 shadow-subtle">
-              <div className="flex items-center gap-2 text-brand-navy font-bold font-heading text-base mb-4">
-                <Users className="w-4 h-4 text-brand-teal" />
-                <h3>Who Should Attend</h3>
+            {/* Delivery Methodology */}
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs">
+              <div className="flex items-center gap-2 text-brand-navy font-bold font-heading text-sm mb-4">
+                <CalendarCheck className="w-4 h-4 text-brand-teal" />
+                <h3>Training Methodology</h3>
               </div>
 
-              <ul className="space-y-3">
-                {program.targetAudience.map((aud, idx) => (
-                  <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-600">
-                    <span className="w-1.5 h-1.5 rounded-full bg-brand-teal shrink-0 mt-2" />
-                    <span>{aud}</span>
-                  </li>
+              <div className="space-y-2">
+                {program.methodology.map((m, idx) => (
+                  <div
+                    key={idx}
+                    className="p-3 rounded-xl bg-brand-bg-soft text-brand-navy text-xs font-semibold border border-slate-200 flex items-center gap-2.5"
+                  >
+                    <CheckCircle2 className="w-4 h-4 text-brand-teal shrink-0" />
+                    <span>{m}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
 
             {/* Related Industries */}
-            <div className="p-7 rounded-3xl bg-white border border-slate-200 shadow-subtle">
-              <div className="flex items-center gap-2 text-brand-navy font-bold font-heading text-base mb-4">
-                <Briefcase className="w-4 h-4 text-brand-teal" />
-                <h3>Relevant Industries</h3>
-              </div>
+            <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-2xs">
+              <h3 className="font-bold font-heading text-brand-navy text-sm mb-3.5">
+                Relevant Industries
+              </h3>
 
               <div className="flex flex-wrap gap-2">
                 {program.relatedIndustries.map((ind, idx) => (
@@ -200,7 +198,7 @@ export const TrainingDetail: React.FC = () => {
               </div>
             </div>
 
-            {/* Quick Enquiry Action Box */}
+            {/* Quick Action Box */}
             <div className="p-7 rounded-3xl bg-gradient-to-br from-brand-teal-light to-white border border-brand-teal/40 text-center shadow-xs">
               <ShieldCheck className="w-8 h-8 text-brand-teal-dark mx-auto mb-2.5" />
               <h4 className="font-bold text-brand-navy text-sm mb-1">
@@ -209,13 +207,26 @@ export const TrainingDetail: React.FC = () => {
               <p className="text-xs text-slate-600 mb-5 leading-relaxed">
                 We adapt session duration, batch size, and language according to your workforce needs.
               </p>
-              <Link
-                to={`/contact?program=${encodeURIComponent(program.title)}`}
-                className="w-full inline-flex items-center justify-center gap-2 py-3 rounded-xl bg-brand-navy text-white text-xs font-bold hover:bg-brand-navy-deep transition-all shadow-sm"
-              >
-                <span>Request Custom Schedule</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+              
+              <div className="space-y-2">
+                <a
+                  href={whatsappInquiryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold transition-all shadow-xs"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 fill-white/20 text-white" />
+                  <span>Chat on WhatsApp</span>
+                </a>
+
+                <a
+                  href={`tel:${ACADEMY_INFO.phone.tel}`}
+                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-brand-navy text-white text-xs font-bold hover:bg-brand-navy-deep transition-all shadow-xs"
+                >
+                  <Phone className="w-3.5 h-3.5 text-brand-teal-bright" />
+                  <span>Call {ACADEMY_INFO.phone.display}</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

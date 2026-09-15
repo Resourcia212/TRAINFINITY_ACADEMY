@@ -8,18 +8,19 @@ import {
   RefreshCw,
   CheckCircle2,
   Award,
-  ArrowRight,
   ShieldCheck,
   ChevronRight,
   FileText,
+  Phone,
+  MessageCircle,
 } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SECURITY_PILLARS, PROGRESSION_TIMELINE } from '@/data/securityExpertise';
 import { DocumentModal } from '@/components/common/DocumentModal';
 import { CREDENTIALS_DOCUMENTS } from '@/data/credentials';
+import { ACADEMY_INFO } from '@/data/siteContent';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
 
 export const Security: React.FC = () => {
   const [activeStage, setActiveStage] = useState(0);
@@ -206,13 +207,25 @@ export const Security: React.FC = () => {
           <p className="text-xs sm:text-sm text-slate-600 mb-8 font-normal leading-relaxed">
             Whether for industrial manufacturing units, IT parks, educational campuses, or residential complexes, Trainfinity Academy delivers disciplined security training programs.
           </p>
-          <Link
-            to="/contact?service=Security%20%26%20Guard%20Operations%20Training"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-btn bg-brand-navy text-white text-sm font-semibold shadow-card hover:bg-brand-navy-deep active:scale-95 transition-all"
-          >
-            <span>Request Security Training Proposal</span>
-            <ArrowRight className="w-4 h-4 text-brand-teal-bright" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+            <a
+              href="https://wa.me/919011065099?text=Hello%20Trainfinity%20Academy%2C%20I%20would%20like%20to%20inquire%20about%20Security%20%26%20Guard%20Operations%20Training."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-bold shadow-md active:scale-95 transition-all"
+            >
+              <MessageCircle className="w-4 h-4 fill-white/20 text-white" />
+              <span>Chat on WhatsApp</span>
+            </a>
+
+            <a
+              href={`tel:${ACADEMY_INFO.phone.tel}`}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-brand-navy text-white text-xs sm:text-sm font-semibold hover:bg-brand-navy-deep active:scale-95 transition-all shadow-xs"
+            >
+              <Phone className="w-4 h-4 text-brand-teal-bright" />
+              <span>Call {ACADEMY_INFO.phone.display}</span>
+            </a>
+          </div>
         </div>
 
         {/* Certificate Modal */}

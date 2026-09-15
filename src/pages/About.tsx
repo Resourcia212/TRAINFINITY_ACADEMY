@@ -6,13 +6,15 @@ import {
   Target,
   CheckCircle2,
   ChevronDown,
-  ArrowRight,
   Sparkles,
+  ArrowRight,
+  Phone,
+  MessageCircle,
 } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SectionHeading } from '@/components/common/SectionHeading';
-import { QUALITATIVE_HIGHLIGHTS, FAQS } from '@/data/siteContent';
+import { QUALITATIVE_HIGHLIGHTS, FAQS, ACADEMY_INFO } from '@/data/siteContent';
 import { cn } from '@/lib/utils';
 
 export const About: React.FC = () => {
@@ -208,13 +210,25 @@ export const About: React.FC = () => {
           <p className="text-sm text-slate-600 mb-8 max-w-xl mx-auto">
             Contact our training coordinators to schedule an exploratory discussion or site assessment.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-btn bg-brand-navy text-white text-sm font-semibold shadow-card hover:bg-brand-navy-deep active:scale-95 transition-all"
-          >
-            <span>Get in Touch with Trainfinity</span>
-            <ArrowRight className="w-4 h-4 text-brand-teal-bright" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5">
+            <a
+              href={ACADEMY_INFO.whatsapp.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-bold shadow-md active:scale-95 transition-all"
+            >
+              <MessageCircle className="w-4 h-4 fill-white/20 text-white" />
+              <span>Chat on WhatsApp</span>
+            </a>
+
+            <a
+              href={`tel:${ACADEMY_INFO.phone.tel}`}
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brand-navy text-white text-xs sm:text-sm font-semibold hover:bg-brand-navy-deep active:scale-95 transition-all shadow-xs"
+            >
+              <Phone className="w-4 h-4 text-brand-teal-bright" />
+              <span>Call {ACADEMY_INFO.phone.display}</span>
+            </a>
+          </div>
         </div>
       </Container>
     </div>

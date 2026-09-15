@@ -20,6 +20,10 @@ export interface ContactInfo {
     handle: string;
     url: string;
   };
+  whatsapp: {
+    display: string;
+    url: string;
+  };
   workingHours: string;
 }
 
@@ -58,6 +62,10 @@ export const ACADEMY_INFO: ContactInfo = {
   instagram: {
     handle: "@trainfinityacademy",
     url: "https://www.instagram.com/trainfinityacademy",
+  },
+  whatsapp: {
+    display: "090110 65099",
+    url: "https://wa.me/919011065099?text=Hello%20Trainfinity%20Academy%2C%20I%20would%20like%20to%20inquire%20about%20your%20training%20services.",
   },
   workingHours: "Monday – Saturday: 9:00 AM – 7:00 PM IST",
 };

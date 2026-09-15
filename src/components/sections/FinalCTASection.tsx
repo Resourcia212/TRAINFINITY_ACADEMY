@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Phone, ArrowRight, ShieldCheck, MapPin } from 'lucide-react';
+import { Phone, MessageCircle, ShieldCheck, MapPin } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { ACADEMY_INFO } from '@/data/siteContent';
 
@@ -32,19 +31,23 @@ export const FinalCTASection: React.FC = () => {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-7">
-            <Link
-              to="/contact"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-brand-teal text-brand-navy-deep text-xs sm:text-sm font-bold shadow-teal-glow hover:bg-brand-teal-bright active:scale-95 transition-all group"
+            {/* WhatsApp Button */}
+            <a
+              href={ACADEMY_INFO.whatsapp.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-bold shadow-md active:scale-95 transition-all group"
             >
-              <span>Request Training Proposal</span>
-              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </Link>
+              <MessageCircle className="w-4 h-4 fill-white/20 text-white" />
+              <span>Chat on WhatsApp</span>
+            </a>
 
+            {/* Direct Call Button */}
             <a
               href={`tel:${ACADEMY_INFO.phone.tel}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white text-xs sm:text-sm font-semibold transition-all"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white text-xs sm:text-sm font-semibold transition-all"
             >
-              <Phone className="w-3.5 h-3.5 text-brand-teal-bright" />
+              <Phone className="w-4 h-4 text-brand-teal-bright" />
               <span>Call {ACADEMY_INFO.phone.display}</span>
             </a>
           </div>

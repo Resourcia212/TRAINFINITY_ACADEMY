@@ -10,9 +10,12 @@ import {
   ArrowRight,
   Sliders,
   CheckCircle2,
+  Phone,
+  MessageCircle,
 } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
+import { ACADEMY_INFO } from '@/data/siteContent';
 import { cn } from '@/lib/utils';
 
 export const CustomizedTrainingSection: React.FC = () => {
@@ -175,13 +178,25 @@ export const CustomizedTrainingSection: React.FC = () => {
             <p className="text-xs text-slate-600 text-center sm:text-left font-medium">
               Need a tailored service blueprint combining security, soft skills, and emergency drills for your staff?
             </p>
-            <Link
-              to="/contact"
-              className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-brand-navy text-white text-xs font-semibold hover:bg-brand-navy-deep active:scale-95 transition-all shrink-0 shadow-xs"
-            >
-              <span>Discuss Your Service Requirement</span>
-              <ArrowRight className="w-3.5 h-3.5 text-brand-teal-bright" />
-            </Link>
+            <div className="flex items-center gap-2 shrink-0">
+              <a
+                href={ACADEMY_INFO.whatsapp.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold transition-all shadow-xs"
+              >
+                <MessageCircle className="w-3.5 h-3.5 fill-white/20 text-white" />
+                <span>WhatsApp</span>
+              </a>
+
+              <a
+                href={`tel:${ACADEMY_INFO.phone.tel}`}
+                className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-brand-navy text-white text-xs font-semibold hover:bg-brand-navy-deep transition-all shadow-xs"
+              >
+                <Phone className="w-3.5 h-3.5 text-brand-teal-bright" />
+                <span>Call Us</span>
+              </a>
+            </div>
           </div>
         </div>
       </Container>

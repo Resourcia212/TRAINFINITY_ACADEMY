@@ -5,16 +5,18 @@ import {
   Clock,
   Users,
   CheckCircle2,
-  ArrowRight,
   BookOpen,
   Target,
   ArrowLeft,
   CalendarCheck,
   Layers,
+  Phone,
+  MessageCircle,
 } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SERVICES } from '@/data/services';
+import { ACADEMY_INFO } from '@/data/siteContent';
 
 export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -23,6 +25,10 @@ export const ServiceDetail: React.FC = () => {
   if (!service) {
     return <Navigate to="/services" replace />;
   }
+
+  const whatsappInquiryUrl = `https://wa.me/919011065099?text=${encodeURIComponent(
+    `Hello Trainfinity Academy, I would like to inquire about the ${service.name} training service.`
+  )}`;
 
   return (
     <div className="py-10 sm:py-14 bg-white">
@@ -56,18 +62,30 @@ export const ServiceDetail: React.FC = () => {
               {service.fullOverview}
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
-              <Link
-                to={`/contact?service=${encodeURIComponent(service.name)}`}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-brand-navy text-white text-xs sm:text-sm font-bold shadow-card hover:bg-brand-navy-deep active:scale-95 transition-all group"
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              {/* WhatsApp Button */}
+              <a
+                href={whatsappInquiryUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-bold shadow-md active:scale-95 transition-all group whitespace-nowrap"
               >
-                <span>Request This Service</span>
-                <ArrowRight className="w-3.5 h-3.5 text-brand-teal-bright group-hover:translate-x-0.5 transition-transform" />
-              </Link>
+                <MessageCircle className="w-4 h-4 fill-white/20 text-white" />
+                <span>WhatsApp Inquire</span>
+              </a>
+
+              {/* Call Coordinator Button */}
+              <a
+                href={`tel:${ACADEMY_INFO.phone.tel}`}
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-navy text-white text-xs sm:text-sm font-semibold hover:bg-brand-navy-deep active:scale-95 transition-all shadow-xs whitespace-nowrap"
+              >
+                <Phone className="w-4 h-4 text-brand-teal-bright" />
+                <span>Call {ACADEMY_INFO.phone.display}</span>
+              </a>
 
               <Link
                 to="/services"
-                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-bg-soft border border-slate-200 text-brand-navy text-xs sm:text-sm font-semibold hover:border-brand-teal transition-colors"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-brand-bg-soft border border-slate-200 text-brand-navy text-xs sm:text-sm font-semibold hover:border-brand-teal transition-colors"
               >
                 <ArrowLeft className="w-3.5 h-3.5" />
                 <span>All Services</span>
@@ -222,18 +240,31 @@ export const ServiceDetail: React.FC = () => {
             <div className="p-6 rounded-2xl bg-gradient-to-br from-brand-teal-light to-white border border-brand-teal/40 text-center">
               <ShieldCheck className="w-7 h-7 text-brand-teal-dark mx-auto mb-2" />
               <h4 className="font-bold text-brand-navy text-xs sm:text-sm mb-1">
-                Request Service Proposal
+                Book or Customize This Service
               </h4>
               <p className="text-xs text-slate-600 mb-3.5 font-normal leading-relaxed">
                 We adapt curriculum examples, batch scheduling, and regional language format for your team.
               </p>
-              <Link
-                to={`/contact?service=${encodeURIComponent(service.name)}`}
-                className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-brand-navy text-white text-xs font-bold hover:bg-brand-navy-deep transition-all shadow-xs"
-              >
-                <span>Request Training Proposal</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
+              
+              <div className="space-y-2">
+                <a
+                  href={whatsappInquiryUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold transition-all shadow-xs"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 fill-white/20 text-white" />
+                  <span>Chat on WhatsApp</span>
+                </a>
+
+                <a
+                  href={`tel:${ACADEMY_INFO.phone.tel}`}
+                  className="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-brand-navy text-white text-xs font-bold hover:bg-brand-navy-deep transition-all shadow-xs"
+                >
+                  <Phone className="w-3.5 h-3.5 text-brand-teal-bright" />
+                  <span>Call {ACADEMY_INFO.phone.display}</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
