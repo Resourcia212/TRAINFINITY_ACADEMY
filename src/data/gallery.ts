@@ -278,6 +278,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     caption: "Intensive drill inspection, perimeter vigilance, and gate security protocol training for licensed security personnel.",
     location: "Training Ground, Maharashtra",
     featured: true
+  },
+  {
+    id: "gal-31",
+    title: "Corporate Soft Skills & HRD Training Workshop",
+    category: "Healthcare & Corporate",
+    image: "/images/gallery/corporate-soft-skills-hrd-training.jpeg",
+    caption: "Interactive corporate development masterclass on emotional intelligence, conflict resolution, active listening, and front-line professional polish.",
+    location: "Corporate Training Hall, Maharashtra",
+    featured: true
   }
 ];
 

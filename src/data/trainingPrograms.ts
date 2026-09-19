@@ -71,7 +71,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Enhancing professional etiquette, communication clarity, customer interaction, emotional balance, and team collaboration across all workforce levels.",
     fullDescription: "Technical capability must be backed by interpersonal competence. Trainfinity Academy's Workplace & Soft Skills programs bridge communication gaps, instill professional conduct, and empower team members to represent their organization with dignity, empathy, and clarity.",
     iconName: "Users",
-    image: "/images/gallery/corporate-posh-boardroom-training.png",
+    image: "/images/gallery/corporate-soft-skills-hrd-training.jpeg",
     duration: "Flexible (Half-Day to 2-Day Workshops)",
     targetAudience: [
       "Front-line Service & Front-Desk Teams",

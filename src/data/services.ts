@@ -97,7 +97,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Workforce Excellence",
     shortDescription: "Elevating professional communication, workplace etiquette, team synergy, conflict resolution, and customer interaction across corporate teams.",
     fullOverview: "Technical competence alone is not enough; organizational success requires effective interpersonal communication and behavioral alignment. Trainfinity Academy's Corporate Soft Skills and Human Resource Development service empowers employees and front-line staff to communicate with confidence, empathy, and professional poise.",
-    heroImage: "/images/gallery/corporate-posh-boardroom-training.png",
+    heroImage: "/images/gallery/corporate-soft-skills-hrd-training.jpeg",
     durationOptions: "Half-Day Workshop, 1-Day Seminar, or Multi-Week Modular Series",
     serviceScope: [
       "Verbal, non-verbal, and email communication standards",
