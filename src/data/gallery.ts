@@ -206,6 +206,51 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     caption: "Practical conditioning, stretching routines, and stamina enhancement techniques for long-duration guarding shifts (कामावर असताना फिटनेस).",
     location: "Shirpur, Maharashtra",
     featured: false
+  },
+  {
+    id: "gal-23",
+    title: "Women Empowerment & Self Defense Masterclass",
+    category: "Workshops & Seminars",
+    image: "/images/gallery/women-empowerment-self-defense-workshop.jpeg",
+    caption: "Live practical demonstrations of wrist breaks, physical escapes, and boundary assertiveness for female professionals.",
+    location: "Auditorium, Maharashtra",
+    featured: true
+  },
+  {
+    id: "gal-24",
+    title: "Fire & Safety Drills with Extinguisher Operation",
+    category: "Security Operations",
+    image: "/images/gallery/fire-safety-drills-evacuation-extinguisher-training.png",
+    caption: "Industrial plant safety session detailing fire classes, P.A.S.S. extinguisher operation, and emergency exit marshaling.",
+    location: "Industrial Facility, Maharashtra",
+    featured: true
+  },
+  {
+    id: "gal-25",
+    title: "Healthcare & Patient Care Support Training",
+    category: "Healthcare & Corporate",
+    image: "/images/gallery/healthcare-patient-care-support-seminar.png",
+    caption: "Specialized hospital staff guidance on empathetic communication, Code Red evacuation, and corridor de-escalation.",
+    location: "Hospital Conference Hall",
+    featured: true
+  },
+  {
+    id: "gal-26",
+    title: "Housekeeping & Facility Safety Operations Workshop",
+    category: "Healthcare & Corporate",
+    image: "/images/gallery/housekeeping-facility-safety-operations-training.png",
+    caption: "Practical demonstration on chemical dilution PPE, slip hazard mitigation, caution signage, and professional facility etiquette.",
+    location: "Facility Training Suite",
+    featured: true
+  },
+  {
+    id: "gal-27",
+    title: "Custom Institutional Training & Site Audits",
+    category: "Workshops & Seminars",
+    image: "/images/gallery/custom-institutional-training-site-audits.jpeg",
+    caption: "On-site safety compliance evaluation, SOP structuring, and interactive whiteboard risk review with plant engineering leads.",
+    location: "Industrial Complex, Maharashtra",
+    featured: true
   }
 ];
 
