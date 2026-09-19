@@ -40,7 +40,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-4",
     title: "Corporate POSH & Internal Committee Sensitization",
     category: "POSH & HR Awareness",
-    image: "/images/gallery/corporate-posh-boardroom-training.png",
+    image: "/images/gallery/posh-awareness-legal-compliance-workshop.jpeg",
     caption: "Interactive executive session on workplace harassment prevention, gender sensitivity, and IC legal compliance under POSH Act 2013.",
     location: "Corporate Boardroom, Maharashtra",
     featured: true
@@ -259,6 +259,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/images/gallery/hospitality-hotel-guest-experience-training.jpeg",
     caption: "Front-desk guest greeting checklist, active listening, concierge etiquette, and customer care simulations for hotel teams.",
     location: "Executive Reception Suite",
+    featured: true
+  },
+  {
+    id: "gal-29",
+    title: "POCSO & Institutional Child Safety Services",
+    category: "Workshops & Seminars",
+    image: "/images/gallery/pocso-child-safety-institutional-training.jpeg",
+    caption: "School campus and transit safety training on child protection policies, mandatory reporting, and student safety boundaries.",
+    location: "Educational Campus, Maharashtra",
     featured: true
   }
 ];

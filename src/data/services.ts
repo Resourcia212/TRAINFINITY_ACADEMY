@@ -238,7 +238,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Certified Trainers",
     shortDescription: "Certified POSH training sessions, employee sensitization, Internal Committee (IC) capacity building, and statutory documentation under the POSH Act, 2013.",
     fullOverview: "Conducted by Certified POSH Trainers (including credentials from TruIntel Reform Foundation), Trainfinity Academy provides end-to-end Prevention of Sexual Harassment (POSH) compliance services. We help organizations cultivate a zero-tolerance culture of dignity, clarify legal definitions, and train Internal Committee (IC) members to conduct unbiased, compliant inquiries.",
-    heroImage: "/images/gallery/corporate-posh-boardroom-training.png",
+    heroImage: "/images/gallery/posh-awareness-legal-compliance-workshop.jpeg",
     durationOptions: "Half-Day Sensitization Session or Full-Day IC Masterclass",
     serviceScope: [
       "Statutory compliance under the Sexual Harassment of Women at Workplace Act, 2013",
@@ -293,7 +293,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Child Welfare",
     shortDescription: "Specialized child safety workshops for schools, coaching institutes, daycare centers, and transport operators under the POCSO Act.",
     fullOverview: "Ensuring child safety across educational campuses, sports complexes, and school transit vehicles requires compassionate, legally grounded training. Trainfinity Academy delivers language-adapted POCSO training that educates staff, drivers, security, and teachers on mandatory reporting, identifying abuse indicators, and safeguarding child welfare.",
-    heroImage: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/gallery/pocso-child-safety-institutional-training.jpeg",
     durationOptions: "Half-Day Institutional Workshop or Multi-Batch Staff Series",
     serviceScope: [
       "POCSO Act provisions and mandatory legal reporting obligations",

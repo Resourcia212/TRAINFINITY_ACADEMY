@@ -110,7 +110,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Sensitization and compliance workshops under the POSH Act 2013, fostering safe, respectful, and harassment-free work environments.",
     fullDescription: "Conducted by certified POSH trainers, Trainfinity Academy delivers comprehensive Prevention of Sexual Harassment (POSH) training. We clarify statutory frameworks, educate employees on behavioral boundaries, and empower Internal Committees (IC) to conduct fair, legally sound inquiries.",
     iconName: "ShieldCheck",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/gallery/posh-awareness-legal-compliance-workshop.jpeg",
     duration: "Half-Day / Full-Day Certification Sessions",
     targetAudience: [
       "All Employees & Contract Staff",
@@ -149,7 +149,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Specialized training for educational institutions, transport staff, and child-care facilities on POCSO guidelines, vigilance, and child safety protocols.",
     fullDescription: "Protecting children requires vigilant, trained adults across school campuses, sports complexes, and childcare environments. Trainfinity Academy provides compassionate, non-sensational, and legally grounded POCSO (Protection of Children from Sexual Offences) training for teachers, administrative staff, drivers, security, and caregivers.",
     iconName: "HeartHandshake",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/gallery/pocso-child-safety-institutional-training.jpeg",
     duration: "Half-Day / Full-Day Institutional Workshops",
     targetAudience: [
       "School Teachers & Academic Administrators",
