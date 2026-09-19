@@ -154,6 +154,83 @@ export const SERVICES: ServiceItem[] = [
     ]
   },
   {
+    id: "women-empowerment-self-defense",
+    slug: "women-empowerment-self-defense",
+    name: "Women Empowerment & Self Defense",
+    category: "Security & Safety",
+    tag: "Empowerment & Safety",
+    isCoreExpertise: true,
+    shortDescription: "Practical self-defense maneuvers, situational threat awareness, assertive boundary communication, and emergency response training designed for women across institutions and workplaces.",
+    fullOverview: "Trainfinity Academy's Women Empowerment & Self Defense program combines practical, intuitive physical self-protection tactics with heightened situational awareness, threat de-escalation, and personal confidence building. Designed specifically for working women, students, and corporate teams across Maharashtra, this program instills reflexive muscle memory to break free from grabs, neutralize physical aggression, leverage everyday items for protection, and navigate public spaces and late-shift commutes with uncompromising confidence.",
+    heroImage: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
+    durationOptions: "Half-Day Interactive Workshop, 1-Day Intensive Masterclass, or Multi-Week Batch",
+    serviceScope: [
+      "Situational awareness, peripheral vigilance, and early threat recognition",
+      "Intuitive escape techniques from wrist grabs, chokes, and rear body holds",
+      "Vulnerable target counter-strikes using elbows, palms, knees, and body momentum",
+      "Improvised defense using everyday accessories (pens, keys, bags, water bottles)",
+      "Safe commute protocols for public transit, auto/cabs, and unlit parking areas",
+      "Assertive vocal commands, boundary setting, and emergency bystander mobilization"
+    ],
+    keyModules: [
+      {
+        title: "Threat Awareness & Mindset Conditioning",
+        description: "Instilling preventive habits, body language confidence, and spatial alert systems.",
+        topics: [
+          "Color codes of awareness and preemptive risk avoidance",
+          "Recognizing predatory approach behavior and stalking patterns",
+          "Authoritative vocal boundary setting and command posture"
+        ]
+      },
+      {
+        title: "Physical Release & Counter-Strike Mastery",
+        description: "Practical physics-based release maneuvers requiring minimal physical strength.",
+        topics: [
+          "Breaking single and double wrist, arm, and collar grabs",
+          "Escapes from front, rear, and pinned chokeholds",
+          "High-impact strikes to vulnerable pressure points (eyes, nose, throat, groin)"
+        ]
+      },
+      {
+        title: "Everyday Tools & Commute Safety",
+        description: "Transforming common personal belongings into effective protective instruments.",
+        topics: [
+          "Using keys, pens, umbrellas, and bags for tactical distance creation",
+          "Cab, train, and bus safety protocols during late-night hours",
+          "Emergency mobile SOS triggers and panic alert coordination"
+        ]
+      },
+      {
+        title: "Legal Rights & Institutional Support",
+        description: "Empowering participants with knowledge of statutory protections and reporting channels.",
+        topics: [
+          "Understanding legal protections and zero-tolerance policies",
+          "Emergency police helplines (112 / 1090) & rapid reporting protocols",
+          "Post-incident psychological resilience and supportive community networks"
+        ]
+      }
+    ],
+    targetAudience: [
+      "Corporate Female Professionals & IT/BPO Staff",
+      "Hospital Nurses, Doctors & Healthcare Workers",
+      "University, College & High School Female Students",
+      "Manufacturing & Industrial Facility Female Workforce",
+      "Hospitality, Retail & Frontline Service Staff"
+    ],
+    deliveryFormats: [
+      "On-site Corporate Facility Workshops",
+      "Hands-on Physical Mat Drills & Live Simulations",
+      "College & Educational Campus Safety Days",
+      "Annual Women's Day & Safety Fortnight Programs"
+    ],
+    learningOutcomes: [
+      "Instinctive reflexes to escape common physical attacks and holds",
+      "Unshakable self-confidence and assertive presence in high-stress situations",
+      "Heightened vigilance preventing vulnerable situations in unfamiliar areas",
+      "Knowledge of emergency legal rights and institutional escalation workflows"
+    ]
+  },
+  {
     id: "posh-compliance-services",
     slug: "posh-compliance-services",
     name: "POSH Awareness & Legal Compliance Services",
