@@ -58,7 +58,7 @@ export const ACADEMY_INFO: ContactInfo = {
     display: "090110 65099",
     tel: "+919011065099",
   },
-  email: "info@trainfinityacademy.com",
+  email: "trainfinityacademy@gmail.com",
   instagram: {
     handle: "@trainfinityacademy",
     url: "https://www.instagram.com/trainfinityacademy",

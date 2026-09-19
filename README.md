@@ -233,7 +233,7 @@ Open your browser and navigate to:
 
 - **📍 Address**: Flat No. 02, Vatsallydham, Indira Nagar, Opp. Day Care School, Kanifnath Nagar, Near Rajiv Nagar, Nashik – 422009, Maharashtra, India
 - **📞 Direct Phone**: `+91 90110 65099` (090110 65099)
-- **✉️ Official Email**: `info@trainfinityacademy.com`
+- **✉️ Official Email**: `trainfinityacademy@gmail.com`
 - **📸 Instagram**: [@trainfinityacademy](https://instagram.com/trainfinityacademy)
 - **🌐 Website**: [https://github.com/Resourcia212/TRAINFINITY_ACADEMY](https://github.com/Resourcia212/TRAINFINITY_ACADEMY)
 
