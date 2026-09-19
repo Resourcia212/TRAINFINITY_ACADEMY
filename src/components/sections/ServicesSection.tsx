@@ -14,7 +14,7 @@ import {
 import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { SERVICES } from '@/data/services';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const ServicesSection: React.FC = () => {
   const iconMap: Record<string, React.ReactNode> = {
@@ -50,7 +50,7 @@ export const ServicesSection: React.FC = () => {
                 {/* Image Banner */}
                 <div className="relative h-48 overflow-hidden bg-slate-900">
                   <img
-                    src={service.heroImage}
+                    src={assetUrl(service.heroImage)}
                     alt={service.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

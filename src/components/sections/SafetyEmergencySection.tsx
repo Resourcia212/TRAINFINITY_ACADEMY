@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Activity, Heart, Flame, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
+import { assetUrl } from '@/lib/utils';
 
 export const SafetyEmergencySection: React.FC = () => {
   const blocks = [
@@ -69,7 +70,7 @@ export const SafetyEmergencySection: React.FC = () => {
                 {/* Image */}
                 <div className="relative h-44 overflow-hidden bg-slate-900">
                   <img
-                    src={b.image}
+                    src={assetUrl(b.image)}
                     alt={b.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

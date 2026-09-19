@@ -13,6 +13,7 @@ import {
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { INDUSTRIES } from '@/data/industries';
+import { assetUrl } from '@/lib/utils';
 
 export const IndustryDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -78,7 +79,7 @@ export const IndustryDetail: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-slate-900">
               <img
-                src={industry.heroImage}
+                src={assetUrl(industry.heroImage)}
                 alt={industry.name}
                 className="w-full h-full object-cover"
               />

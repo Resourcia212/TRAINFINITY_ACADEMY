@@ -11,7 +11,7 @@ import {
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SERVICES, SERVICE_CATEGORIES } from '@/data/services';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const Services: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All Services');
@@ -116,7 +116,7 @@ export const Services: React.FC = () => {
                 {/* Image Banner */}
                 <div className="relative h-48 overflow-hidden bg-slate-900">
                   <img
-                    src={service.heroImage}
+                    src={assetUrl(service.heroImage)}
                     alt={service.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

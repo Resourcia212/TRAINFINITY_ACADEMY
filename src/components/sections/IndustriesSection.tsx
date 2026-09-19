@@ -12,7 +12,7 @@ import {
 import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { INDUSTRIES } from '@/data/industries';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const IndustriesSection: React.FC = () => {
   const iconMap: Record<string, React.ReactNode> = {
@@ -48,7 +48,7 @@ export const IndustriesSection: React.FC = () => {
                 {/* Image Banner */}
                 <div className="relative h-48 overflow-hidden bg-slate-900">
                   <img
-                    src={ind.heroImage}
+                    src={assetUrl(ind.heroImage)}
                     alt={`${ind.name} Training by Trainfinity Academy`}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

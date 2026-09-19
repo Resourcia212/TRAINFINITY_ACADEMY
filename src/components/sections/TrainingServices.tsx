@@ -9,6 +9,7 @@ import {
 import { Container } from '@/components/common/Container';
 import { SectionHeading } from '@/components/common/SectionHeading';
 import { TRAINING_PROGRAMS } from '@/data/trainingPrograms';
+import { assetUrl } from '@/lib/utils';
 
 export const TrainingServices: React.FC = () => {
   const featuredProgram = TRAINING_PROGRAMS.find((p) => p.featured);
@@ -30,7 +31,7 @@ export const TrainingServices: React.FC = () => {
               {/* Left Image */}
               <div className="lg:col-span-5 relative bg-brand-navy min-h-[240px] lg:min-h-full">
                 <img
-                  src={featuredProgram.image}
+                  src={assetUrl(featuredProgram.image)}
                   alt={featuredProgram.title}
                   className="w-full h-full object-cover"
                 />

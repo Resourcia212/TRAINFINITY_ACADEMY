@@ -11,7 +11,7 @@ import {
 import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { TRAINING_PROGRAMS } from '@/data/trainingPrograms';
-import { cn } from '@/lib/utils';
+import { cn, assetUrl } from '@/lib/utils';
 
 export const Training: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -116,7 +116,7 @@ export const Training: React.FC = () => {
                 {/* Image Banner */}
                 <div className="relative h-48 overflow-hidden bg-slate-900">
                   <img
-                    src={prog.image}
+                    src={assetUrl(prog.image)}
                     alt={prog.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

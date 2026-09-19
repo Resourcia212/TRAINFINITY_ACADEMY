@@ -17,6 +17,7 @@ import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { SERVICES } from '@/data/services';
 import { ACADEMY_INFO } from '@/data/siteContent';
+import { assetUrl } from '@/lib/utils';
 
 export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -97,7 +98,7 @@ export const ServiceDetail: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-slate-900">
               <img
-                src={service.heroImage}
+                src={assetUrl(service.heroImage)}
                 alt={service.name}
                 className="w-full h-full object-cover"
               />

@@ -15,6 +15,7 @@ import { Container } from '@/components/common/Container';
 import { Breadcrumbs } from '@/components/common/Breadcrumbs';
 import { TRAINING_PROGRAMS } from '@/data/trainingPrograms';
 import { ACADEMY_INFO } from '@/data/siteContent';
+import { assetUrl } from '@/lib/utils';
 
 export const TrainingDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -95,7 +96,7 @@ export const TrainingDetail: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] bg-slate-900">
               <img
-                src={program.image}
+                src={assetUrl(program.image)}
                 alt={program.title}
                 className="w-full h-full object-cover"
               />
