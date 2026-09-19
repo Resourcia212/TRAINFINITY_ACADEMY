@@ -28,7 +28,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Comprehensive operational readiness covering basic security concepts, guard drills, scanning & equipment handling, patrolling discipline, and rapid incident response.",
     fullDescription: "Security & Safety training is the foundational cornerstone of Trainfinity Academy. Built from extensive practical experience conducting training for security personnel across Maharashtra, this program transforms security forces from passive observers into disciplined, alert, and proactive protectors of premises, assets, and human lives.",
     iconName: "Shield",
-    image: "/images/gallery/mega-batch-security-guards-parade-formation.png",
+    image: "/images/gallery/security-guard-operations-training.jpeg",
     duration: "Flexible Modular (1 Day to 3 Weeks intensive batches)",
     targetAudience: [
       "Security Guards and Patrol Officers",
@@ -228,7 +228,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Practical fire hazard identification, fire extinguisher operation (PASS), orderly building evacuation drills, and industrial safety protocols.",
     fullDescription: "A fire outbreak requires calm, systematic action, not panic. Trainfinity Academy's Fire & Safety training equips personnel with practical understanding of fire chemistry, hands-on extinguisher operation, smoke hazard management, and safe evacuation execution.",
     iconName: "Flame",
-    image: "/images/gallery/fire-safety-drills-evacuation-extinguisher-training.png",
+    image: "/images/gallery/fire-safety-drills-evacuation-training.jpeg",
     duration: "Half-Day to Full-Day Drill & Mock Evacuation",
     targetAudience: [
       "Designated Fire Wardens & Floor Marshals",

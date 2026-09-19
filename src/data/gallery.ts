@@ -220,7 +220,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-24",
     title: "Fire & Safety Drills with Extinguisher Operation",
     category: "Security Operations",
-    image: "/images/gallery/fire-safety-drills-evacuation-extinguisher-training.png",
+    image: "/images/gallery/fire-safety-drills-evacuation-training.jpeg",
     caption: "Industrial plant safety session detailing fire classes, P.A.S.S. extinguisher operation, and emergency exit marshaling.",
     location: "Industrial Facility, Maharashtra",
     featured: true
@@ -229,7 +229,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-25",
     title: "Healthcare & Patient Care Life Support Training",
     category: "Healthcare & Corporate",
-    image: "/images/gallery/healthcare-patient-care-cpr-support-training.jpeg",
+    image: "/images/gallery/healthcare-patient-care-support-training.jpeg",
     caption: "Hands-on medical manikin CPR compressions and bag-valve-mask emergency ventilation practice for hospital auxiliary and nursing staff.",
     location: "Hospital Conference Hall",
     featured: true
@@ -268,6 +268,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/images/gallery/pocso-child-safety-institutional-training.jpeg",
     caption: "School campus and transit safety training on child protection policies, mandatory reporting, and student safety boundaries.",
     location: "Educational Campus, Maharashtra",
+    featured: true
+  },
+  {
+    id: "gal-30",
+    title: "Security & Guard Operations Training Batch",
+    category: "Security Operations",
+    image: "/images/gallery/security-guard-operations-training.jpeg",
+    caption: "Intensive drill inspection, perimeter vigilance, and gate security protocol training for licensed security personnel.",
+    location: "Training Ground, Maharashtra",
     featured: true
   }
 ];

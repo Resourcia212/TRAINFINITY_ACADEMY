@@ -31,7 +31,7 @@ export const SERVICES: ServiceItem[] = [
     isCoreExpertise: true,
     shortDescription: "Comprehensive training for security guards, supervisors, and patrol officers covering discipline, gate management, patrolling, scanning, and incident response.",
     fullOverview: "Security operations training is the foundational flagship service of Trainfinity Academy. Drawing on our direct experience training batches for the Nashik District Security Guard Board, we equip guarding personnel with practical vigilance, metal detection and screening tools operation, access control protocols, and swift emergency action.",
-    heroImage: "/images/gallery/mega-batch-security-guards-parade-formation.png",
+    heroImage: "/images/gallery/security-guard-operations-training.jpeg",
     durationOptions: "1-Day Refresher, 3-Day Intensive, or 2-Week Induction Batch",
     serviceScope: [
       "Parade discipline, turnout inspection, and professional demeanor",
@@ -403,7 +403,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Disaster Preparedness",
     shortDescription: "Hands-on fire extinguisher operation (PASS method), hazard audits, orderly building evacuation marshaling, and disaster response.",
     fullOverview: "A workplace fire emergency requires practiced muscle memory rather than panic. Trainfinity Academy's Fire & Safety service combines theoretical understanding of fire chemistry with hands-on extinguisher operation, smoke hazard management, and orderly floor evacuation coordination.",
-    heroImage: "/images/gallery/fire-safety-drills-evacuation-extinguisher-training.png",
+    heroImage: "/images/gallery/fire-safety-drills-evacuation-training.jpeg",
     durationOptions: "Half-Day Practical Drill or Full-Day Disaster Simulation",
     serviceScope: [
       "Fire triangle science and identification of Class A, B, C, D, K fire hazards",
@@ -512,7 +512,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Hospital Readiness",
     shortDescription: "Specialized training for hospital ward boys, security, and receptionists in patient handling, de-escalating grieving relatives, and hospital fire safety.",
     fullOverview: "Hospitals are high-stress environments where non-clinical staff play a pivotal role. Trainfinity Academy equips hospital security, ward attendants, and receptionists with the emotional composure to de-escalate grieving or anxious relatives, assist during Code Red fire situations, and initiate basic life support.",
-    heroImage: "/images/gallery/healthcare-patient-care-cpr-support-training.jpeg",
+    heroImage: "/images/gallery/healthcare-patient-care-support-training.jpeg",
     durationOptions: "1-Day or 2-Day Practical Hospital Workshop",
     serviceScope: [
       "De-escalation of agitated or anxious patient relatives during emergencies",
