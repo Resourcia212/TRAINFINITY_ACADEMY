@@ -47,11 +47,11 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-5",
-    title: "Hands-on CPR & Casualty Recovery Practical Drills",
+    title: "CPR & Basic Life Support (BLS) Emergency Training",
     category: "CPR & Medical Response",
-    image: "/images/gallery/cpr-bls-casualty-recovery-drill.png",
-    caption: "Security guards paired up for live chest compressions, airway management, and recovery position simulations under trainer supervision.",
-    location: "Practical Drill Hall",
+    image: "/images/gallery/cpr-bls-medical-emergency-training-drill.jpg",
+    caption: "Live chest compressions, AED defibrillator deployment, and emergency bag-valve ventilation training conducted on medical manikins.",
+    location: "Practical Training Center",
     featured: true
   },
   {

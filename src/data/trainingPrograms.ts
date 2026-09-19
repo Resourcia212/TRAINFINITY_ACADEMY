@@ -28,7 +28,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Comprehensive operational readiness covering basic security concepts, guard drills, scanning & equipment handling, patrolling discipline, and rapid incident response.",
     fullDescription: "Security & Safety training is the foundational cornerstone of Trainfinity Academy. Built from extensive practical experience conducting training for security personnel across Maharashtra, this program transforms security forces from passive observers into disciplined, alert, and proactive protectors of premises, assets, and human lives.",
     iconName: "Shield",
-    image: "https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/gallery/mega-batch-security-guards-parade-formation.png",
     duration: "Flexible Modular (1 Day to 3 Weeks intensive batches)",
     targetAudience: [
       "Security Guards and Patrol Officers",
@@ -71,8 +71,8 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Enhancing professional etiquette, communication clarity, customer interaction, emotional balance, and team collaboration across all workforce levels.",
     fullDescription: "Technical capability must be backed by interpersonal competence. Trainfinity Academy's Workplace & Soft Skills programs bridge communication gaps, instill professional conduct, and empower team members to represent their organization with dignity, empathy, and clarity.",
     iconName: "Users",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
-    duration: "1 to 3 Days interactive workshop",
+    image: "/images/gallery/corporate-posh-boardroom-training.png",
+    duration: "Flexible (Half-Day to 2-Day Workshops)",
     targetAudience: [
       "Front-line Service & Front-Desk Teams",
       "Field Supervisors & Team Leads",
@@ -188,7 +188,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Hands-on life support and emergency response training covering high-quality CPR, choking relief, recovery position, and automated external defibrillator (AED) awareness.",
     fullDescription: "In sudden cardiac arrest or choking emergencies, minutes decide survival. Trainfinity Academy delivers practical CPR & Basic Life Support training that empowers ordinary employees, security guards, and staff to step forward confidently and sustain life until professional medical assistance arrives.",
     iconName: "Activity",
-    image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/gallery/cpr-bls-medical-emergency-training-drill.jpg",
     duration: "1 Day Practical Certification Drill",
     targetAudience: [
       "Emergency Response Teams (ERT)",
@@ -228,7 +228,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Practical fire hazard identification, fire extinguisher operation (PASS), orderly building evacuation drills, and industrial safety protocols.",
     fullDescription: "A fire outbreak requires calm, systematic action, not panic. Trainfinity Academy's Fire & Safety training equips personnel with practical understanding of fire chemistry, hands-on extinguisher operation, smoke hazard management, and safe evacuation execution.",
     iconName: "Flame",
-    image: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/gallery/fire-safety-drills-evacuation-extinguisher-training.png",
     duration: "Half-Day to Full-Day Drill & Mock Evacuation",
     targetAudience: [
       "Designated Fire Wardens & Floor Marshals",

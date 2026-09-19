@@ -348,7 +348,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Life Saving Drills",
     shortDescription: "Certified practical training in Cardiopulmonary Resuscitation (CPR), Automated External Defibrillators (AED), and first-response casualty stabilization.",
     fullOverview: "When a sudden cardiac arrest, choking, or traumatic injury occurs in a workplace, immediate action within the first 4 minutes makes the difference between life and death. Trainfinity Academy provides hands-on CPR and BLS training using medical manikins so that your staff can act decisively before paramedics arrive.",
-    heroImage: "/images/gallery/cpr-bls-casualty-recovery-drill.png",
+    heroImage: "/images/gallery/cpr-bls-medical-emergency-training-drill.jpg",
     durationOptions: "1-Day Practical Intensive or 4-Hour Rapid Certification",
     serviceScope: [
       "High-quality chest compressions and rescue breathing techniques",
