@@ -209,10 +209,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-23",
-    title: "Women Empowerment & Self Defense Masterclass",
+    title: "Women Empowerment & Self Defense Demonstration",
     category: "Workshops & Seminars",
-    image: "/images/gallery/women-empowerment-self-defense-workshop.jpeg",
-    caption: "Live practical demonstrations of wrist breaks, physical escapes, and boundary assertiveness for female professionals.",
+    image: "/images/gallery/women-empowerment-self-defense-demonstration.png",
+    caption: "Live practical demonstrations of wrist breaks, physical escape maneuvers, and assertive posture training conducted for female workforce.",
     location: "Auditorium, Maharashtra",
     featured: true
   },
@@ -227,10 +227,10 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: "gal-25",
-    title: "Healthcare & Patient Care Support Training",
+    title: "Healthcare & Patient Care Life Support Training",
     category: "Healthcare & Corporate",
-    image: "/images/gallery/healthcare-patient-care-support-seminar.png",
-    caption: "Specialized hospital staff guidance on empathetic communication, Code Red evacuation, and corridor de-escalation.",
+    image: "/images/gallery/healthcare-patient-care-cpr-support-training.jpeg",
+    caption: "Hands-on medical manikin CPR compressions and bag-valve-mask emergency ventilation practice for hospital auxiliary and nursing staff.",
     location: "Hospital Conference Hall",
     featured: true
   },
@@ -250,6 +250,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     image: "/images/gallery/custom-institutional-training-site-audits.jpeg",
     caption: "On-site safety compliance evaluation, SOP structuring, and interactive whiteboard risk review with plant engineering leads.",
     location: "Industrial Complex, Maharashtra",
+    featured: true
+  },
+  {
+    id: "gal-28",
+    title: "Hospitality & 5-Star Guest Experience Polish",
+    category: "Healthcare & Corporate",
+    image: "/images/gallery/hospitality-hotel-guest-experience-training.jpeg",
+    caption: "Front-desk guest greeting checklist, active listening, concierge etiquette, and customer care simulations for hotel teams.",
+    location: "Executive Reception Suite",
     featured: true
   }
 ];

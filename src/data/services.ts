@@ -162,7 +162,7 @@ export const SERVICES: ServiceItem[] = [
     isCoreExpertise: true,
     shortDescription: "Practical self-defense maneuvers, situational threat awareness, assertive boundary communication, and emergency response training designed for women across institutions and workplaces.",
     fullOverview: "Trainfinity Academy's Women Empowerment & Self Defense program combines practical, intuitive physical self-protection tactics with heightened situational awareness, threat de-escalation, and personal confidence building. Designed specifically for working women, students, and corporate teams across Maharashtra, this program instills reflexive muscle memory to break free from grabs, neutralize physical aggression, leverage everyday items for protection, and navigate public spaces and late-shift commutes with uncompromising confidence.",
-    heroImage: "/images/gallery/women-empowerment-self-defense-workshop.jpeg",
+    heroImage: "/images/gallery/women-empowerment-self-defense-demonstration.png",
     durationOptions: "Half-Day Interactive Workshop, 1-Day Intensive Masterclass, or Multi-Week Batch",
     serviceScope: [
       "Situational awareness, peripheral vigilance, and early threat recognition",
@@ -458,7 +458,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Guest Safety & Polish",
     shortDescription: "Balancing discreet security vigilance with warm guest hospitality, VIP handling, banquet fire safety, and polished customer etiquette.",
     fullOverview: "In hotels and resorts, guest safety must blend seamlessly with warmth, discretion, and luxury service. Trainfinity Academy trains hospitality teams to provide polished guest greeting, discreet observation, and rapid response to kitchen fires or medical situations.",
-    heroImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80",
+    heroImage: "/images/gallery/hospitality-hotel-guest-experience-training.jpeg",
     durationOptions: "2-Day Workshop or Ongoing Departmental Refresher",
     serviceScope: [
       "Polished guest greetings, body language, and grooming standards",
@@ -512,7 +512,7 @@ export const SERVICES: ServiceItem[] = [
     tag: "Hospital Readiness",
     shortDescription: "Specialized training for hospital ward boys, security, and receptionists in patient handling, de-escalating grieving relatives, and hospital fire safety.",
     fullOverview: "Hospitals are high-stress environments where non-clinical staff play a pivotal role. Trainfinity Academy equips hospital security, ward attendants, and receptionists with the emotional composure to de-escalate grieving or anxious relatives, assist during Code Red fire situations, and initiate basic life support.",
-    heroImage: "/images/gallery/healthcare-patient-care-support-seminar.png",
+    heroImage: "/images/gallery/healthcare-patient-care-cpr-support-training.jpeg",
     durationOptions: "1-Day or 2-Day Practical Hospital Workshop",
     serviceScope: [
       "De-escalation of agitated or anxious patient relatives during emergencies",
