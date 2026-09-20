@@ -1,0 +1,6 @@
+# Robots.txt for Trainfinity Academy
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://Resourcia212.github.io/TRAINFINITY_ACADEMY/sitemap.xml
