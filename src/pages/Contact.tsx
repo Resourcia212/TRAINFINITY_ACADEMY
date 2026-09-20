@@ -1,25 +1,11 @@
 import React from 'react';
-// import { useEffect } from 'react';
-// import { useSearchParams } from 'react-router-dom';
-// import { useForm } from 'react-hook-form';
-// import { zodResolver } from '@hookform/resolvers/zod';
-// import * as z from 'zod';
-// import { toast } from 'sonner';
 import {
   Phone,
   MapPin,
   Instagram,
-  // Send,
   Clock,
   Mail,
   ShieldCheck,
-  // User,
-  // Building2,
-  // ChevronDown,
-  // Layers,
-  // Calendar,
-  // MessageSquare,
-  // Sparkles,
   CheckCircle2,
   FileCheck,
   Zap,
