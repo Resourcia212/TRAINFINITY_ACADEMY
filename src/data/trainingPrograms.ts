@@ -28,7 +28,7 @@ export const TRAINING_PROGRAMS: TrainingProgram[] = [
     shortDescription: "Comprehensive operational readiness covering basic security concepts, guard drills, scanning & equipment handling, patrolling discipline, and rapid incident response.",
     fullDescription: "Security & Safety training is the foundational cornerstone of Trainfinity Academy. Built from extensive practical experience conducting training for security personnel across Maharashtra, this program transforms security forces from passive observers into disciplined, alert, and proactive protectors of premises, assets, and human lives.",
     iconName: "Shield",
-    image: "/images/gallery/security-guard-operations-training.jpeg",
+    image: "/images/gallery/security-and-safety-training.jpeg",
     duration: "Flexible Modular (1 Day to 3 Weeks intensive batches)",
     targetAudience: [
       "Security Guards and Patrol Officers",
