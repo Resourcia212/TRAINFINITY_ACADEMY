@@ -68,11 +68,12 @@ export const SafetyEmergencySection: React.FC = () => {
             >
               <div>
                 {/* Image */}
-                <div className="relative h-44 overflow-hidden bg-slate-900">
+                <div className="relative aspect-[4/3] overflow-hidden bg-slate-900">
                   <img
                     src={assetUrl(b.image)}
                     alt={b.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                   <div className="absolute top-3 left-3">
