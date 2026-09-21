@@ -13,7 +13,7 @@ export const SafetyEmergencySection: React.FC = () => {
       title: 'Cardiopulmonary Resuscitation (CPR)',
       description: 'Hands-on practice on medical manikins for high-quality chest compressions, rescue breathing, and choking relief.',
       icon: <Heart className="w-4 h-4 text-brand-teal" />,
-      image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80',
+      image: '/images/gallery/cardiopulmonary-resuscitation-cpr-training.jpeg',
       points: [
         'Adult, child and infant compression techniques',
         'Heimlich maneuver for airway obstruction',
@@ -27,7 +27,7 @@ export const SafetyEmergencySection: React.FC = () => {
       title: 'Basic Life Support (BLS) & AED',
       description: 'First-responder protocols, AED defibrillator familiarization, recovery positions, and stabilizing casualties before medical transport.',
       icon: <Activity className="w-4 h-4 text-brand-teal" />,
-      image: 'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80',
+      image: '/images/gallery/basic-life-support-bls-aed-training.jpeg',
       points: [
         'Automated External Defibrillator (AED) operation',
         'Severe bleeding control and shock management',
@@ -41,7 +41,7 @@ export const SafetyEmergencySection: React.FC = () => {
       title: 'Basic Fire & Evacuation Safety',
       description: 'Live fire extinguisher operation (PASS method), building evacuation marshaling, and workplace hazard mitigation.',
       icon: <Flame className="w-4 h-4 text-brand-teal" />,
-      image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+      image: '/images/gallery/basic-fire-evacuation-safety-training.jpeg',
       points: [
         'Operating Class A, B, C, D fire extinguishers',
         'Escape route clearance and assembly point drills',
