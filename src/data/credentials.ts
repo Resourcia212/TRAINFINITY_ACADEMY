@@ -58,5 +58,27 @@ export const CREDENTIALS_DOCUMENTS: CredentialDocument[] = [
       ],
       signatory: "Dr. Himani Verma (National Trainer) & Dr. Suhaib Amin (Director General)"
     }
+  },
+  {
+    id: "pocso-train-the-trainer-certificate",
+    title: "POCSO Train-the-Trainer Certification",
+    category: "Trainer Certification",
+    issuingAuthority: "TruIntel Reform Foundation, New Delhi",
+    recipient: "Priyanka Korde (Trainfinity Academy Faculty)",
+    date: "23 October 2026",
+    description: "Certified Train-the-Trainer credential on Protection of Children from Sexual Offences (POCSO Act, 2012), validating faculty expertise in institutional child safety, protection policies, and compliance awareness.",
+    isAuthentic: true,
+    imagePath: "/images/credentials/pocso-train-the-trainer-certificate.jpg",
+    details: {
+      refNumber: "TIR-POCSO-GB6E3QZT",
+      keyPoints: [
+        "Train-the-Trainer Certification Course on Protection of Children from Sexual Offences",
+        "Structured under the statutory POCSO Act, 2012 framework",
+        "Awarded by TruIntel Reform Foundation, New Delhi (Child Safety & Protection Division)",
+        "Covers institutional child protection policies, mandatory reporting, and safe environments",
+        "Endorsed by National Trainer & Director General with statutory recognition"
+      ],
+      signatory: "Dr. Himani Verma (National Trainer) & Dr. Suhaib Amin (Director General)"
+    }
   }
 ];

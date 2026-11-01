@@ -72,14 +72,14 @@ export const Credentials: React.FC = () => {
                     : 'text-slate-600 hover:text-brand-navy hover:bg-white/80'
                 )}
               >
-                {cat === 'All' ? 'All Documents (2)' : cat}
+                {cat === 'All' ? `All Documents (${CREDENTIALS_DOCUMENTS.length})` : cat}
               </button>
             ))}
           </div>
         </div>
 
-        {/* Documents Grid (Spacious 2-Column Balanced Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+        {/* Documents Grid (3-Column Balanced Grid) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-16">
           {filteredDocs.map((doc) => (
             <div
               key={doc.id}

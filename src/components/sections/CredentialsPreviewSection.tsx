@@ -19,8 +19,8 @@ export const CredentialsPreviewSection: React.FC = () => {
           subtitle="Trainfinity Academy maintains verified credentials and government board training experience across Maharashtra."
         />
 
-        {/* 2-Column Balanced Credentials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-10">
+        {/* 3-Column Balanced Credentials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto mb-10">
           {CREDENTIALS_DOCUMENTS.map((doc) => (
             <div
               key={doc.id}
